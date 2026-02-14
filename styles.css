@@ -326,6 +326,18 @@ body {
   min-height: 400px;
 }
 
+/* === Contact Email === */
+.contact-email {
+  margin-bottom: 2rem;
+}
+
+.btn-email {
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  padding: 0.75rem 2rem;
+}
+
 /* === THANK YOU === */
 .thankyou-inner {
   align-items: center;
