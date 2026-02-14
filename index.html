@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adatoz Consulting</title>
+  <meta name="description" content="Software engineering support for UK businesses. Clear advice and focused fixes for websites, online shops, and technical decisions, delivered calmly and asynchronously.">
+  <meta property="og:title" content="Adatoz Consulting">
+  <meta property="og:description" content="Software engineering support for UK businesses. Clear advice and focused fixes for websites, online shops, and technical decisions, delivered calmly and asynchronously.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://adatozconsulting.co.uk">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div id="card">
+
+      <!-- ==================== HOME ==================== -->
+      <section id="home" class="section active fade-in">
+        <div class="section-inner home-inner">
+          <div class="home-content">
+            <h1 class="site-title">ADATOZ CONSULTING</h1>
+            <h3 class="site-subtitle">Digital help when you need it</h3>
+
+            <div class="portrait-wrapper">
+              <!-- Replace src with your actual portrait image -->
+              <img src="images/portrait.jpg" alt="Joshua Adatoz" class="portrait">
+            </div>
+
+            <p class="intro-text">
+              Hello, I'm Joshua Adatoz. I provide technical certainty for UK businesses.<br><br>
+              When a system breaks, a checkout fails, or a project decision feels unclear, I step in to understand the situation and outline a clear path forward.<br><br>
+              I am a Senior Software Engineer with over 15 years of experience stabilising live systems and supporting business-critical decisions through focused, asynchronous work.
+            </p>
+
+            <div class="nav-buttons">
+              <button class="btn" onclick="showSection('services')">Services</button>
+              <button class="btn" onclick="showSection('about')">About</button>
+              <button class="btn" onclick="showSection('contact')">Request Review</button>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=61587822304959" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="mailto:hello@adatozconsulting.co.uk" aria-label="Email" class="social-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </a>
+            </div>
+            <p class="copyright">&copy; 2026 Adatoz Consulting.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SERVICES ==================== -->
+      <section id="services" class="section">
+        <div class="section-inner services-inner">
+          <div class="services-layout">
+            <div class="services-image">
+              <!-- Replace src with your actual services image -->
+              <img src="images/services.jpg" alt="Technical workspace">
+            </div>
+            <div class="services-content">
+              <h2 class="section-heading">Solutions from A to Z</h2>
+
+              <div class="service-tier">
+                <h3 class="service-title">The Fix &mdash; £250</h3>
+                <p class="service-desc">
+                  Resolution of a clearly defined issue on your website or online shop. If you're not sure what the issue is yet, I'll help identify it before making any changes.<br><br>
+                  This is for situations where something is broken, behaving incorrectly, or blocking sales &mdash; and you need it handled properly without guesswork.<br><br>
+                  Nothing changes without your approval.
+                </p>
+              </div>
+
+              <div class="service-tier">
+                <h3 class="service-title">The Advice &mdash; £125</h3>
+                <p class="service-desc">
+                  I review your situation and explain what's really happening &mdash; what matters, and what doesn't &mdash; so you can make the right decision with confidence.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-back" onclick="showSection('home')">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            Back
+          </button>
+        </div>
+      </section>
+
+      <!-- ==================== ABOUT ==================== -->
+      <section id="about" class="section">
+        <div class="section-inner about-inner">
+          <h2 class="section-heading">About</h2>
+          <h3 class="about-subtitle">15+ Years of Engineering Logic</h3>
+
+          <div class="about-layout">
+            <div class="about-text">
+              <p>
+                I am a Senior Software Engineer with over 15 years of experience working on systems that businesses depend on every day.
+              </p>
+              <p>
+                My background includes working with both small companies and large organisations, helping resolve situations where systems became fragile, confusing, or difficult to maintain. In one enterprise role, I reduced manual operational work by more than 90% by addressing the underlying causes rather than surface symptoms.
+              </p>
+              <p>
+                Today, I work with UK business owners who want clear answers and dependable outcomes. When something feels off with a website, an online shop, or a technical decision, I help make sense of the situation and outline a practical way forward.
+              </p>
+              <p>
+                I take on a limited number of requests and only proceed when I am confident I can add real value.
+              </p>
+            </div>
+            <div class="about-image">
+              <!-- Replace src with your actual about image -->
+              <img src="images/about.jpg" alt="Professional workspace">
+            </div>
+          </div>
+
+          <button class="btn btn-back" onclick="showSection('home')">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            Back
+          </button>
+        </div>
+      </section>
+
+      <!-- ==================== CONTACT ==================== -->
+      <section id="contact" class="section">
+        <div class="section-inner contact-inner">
+          <h2 class="section-heading">Contact</h2>
+
+          <p class="contact-intro">
+            I work on an asynchronous, next-available basis to protect the quality and focus of my work.<br><br>
+            All requests are reviewed before acceptance. I do not take unscheduled calls.<br><br>
+            Use the form below to describe your situation. If it looks like something I can help with, I will reply by email with a clear next step.<br><br>
+            <em>Please include your website address and a brief description of the issue or decision you are facing. Clear context helps me respond accurately.</em>
+          </p>
+
+          <!-- Tally Form Embed -->
+          <div class="form-container">
+            <!-- Replace XXXXXX with your actual Tally form ID -->
+            <iframe
+              data-tally-src="https://tally.so/embed/XXXXXX?alignLeft=1&hideTitle=1&transparentBackground=1"
+              loading="lazy"
+              width="100%"
+              height="400"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              title="Contact Form"
+            ></iframe>
+            <script>
+              // Tally embed script
+              var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w;s.onload=v;s.onerror=v;d.body.appendChild(s)}
+            </script>
+          </div>
+
+          <button class="btn btn-back" onclick="showSection('home')">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            Back
+          </button>
+        </div>
+      </section>
+
+      <!-- ==================== THANK YOU ==================== -->
+      <section id="thankyou" class="section">
+        <div class="section-inner thankyou-inner">
+          <h2 class="section-heading">Thank you</h2>
+          <p class="thankyou-text">
+            Your request has been received and added to my review queue.<br><br>
+            I will look through the details you provided and respond by email if the request is a good fit. You will receive either a clear recommendation or a proposed next step.<br><br>
+            Responses are usually sent within two business days.
+          </p>
+          <button class="btn" onclick="showSection('home')">Okay</button>
+        </div>
+      </section>
+
+    </div><!-- /card -->
+  </div><!-- /wrapper -->
+
+  <script>
+    function showSection(id) {
+      // Hide all sections
+      document.querySelectorAll('.section').forEach(s => {
+        s.classList.remove('active');
+        s.classList.remove('fade-in');
+      });
+
+      // Show target section with animation
+      const target = document.getElementById(id);
+      // Small delay for CSS transition
+      requestAnimationFrame(() => {
+        target.classList.add('active');
+        requestAnimationFrame(() => {
+          target.classList.add('fade-in');
+        });
+      });
+
+      // Update URL hash without scrolling
+      history.replaceState(null, null, '#' + id);
+    }
+
+    // Handle direct URL hash navigation
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && document.getElementById(hash)) {
+        showSection(hash);
+      }
+    });
+  </script>
+</body>
+</html>

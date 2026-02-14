@@ -1,0 +1,403 @@
+/* ==============================
+   ADATOZ CONSULTING - Styles
+   Replicating Carrd card layout
+   ============================== */
+
+/* === Reset & Base === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #3a3a3a;
+  background: #f0f0f2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Wrapper (centers the card) === */
+#wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* === Card Container (the white box with glow) === */
+#card {
+  position: relative;
+  width: 100%;
+  max-width: 64rem;
+  min-height: 36rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.02),
+    0 2px 8px rgba(0, 0, 0, 0.06),
+    0 0 40px rgba(120, 100, 200, 0.08),
+    0 0 80px rgba(100, 140, 220, 0.04);
+  overflow: hidden;
+}
+
+/* === Sections (card pages) === */
+.section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  overflow-y: auto;
+}
+
+.section.active {
+  position: relative;
+  visibility: visible;
+  opacity: 0;
+}
+
+.section.active.fade-in {
+  opacity: 1;
+}
+
+.section-inner {
+  padding: 3rem 3.5rem;
+  min-height: 36rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === Typography === */
+.site-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  color: #2a2a2a;
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.site-subtitle {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #666;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+}
+
+.section-heading {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  margin-bottom: 0.5rem;
+}
+
+/* === Portrait === */
+.portrait-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.portrait {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+/* === Intro Text === */
+.intro-text {
+  font-size: 0.88rem;
+  color: #555;
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.75;
+}
+
+/* === Buttons === */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.8rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  background: transparent;
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  border-color: #888;
+  color: #000;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-back {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* === Footer (Home section) === */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: #888;
+  border: 1.5px solid #ddd;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.social-icon:hover {
+  color: #333;
+  border-color: #999;
+}
+
+.copyright {
+  font-size: 0.72rem;
+  color: #aaa;
+  letter-spacing: 0.05em;
+}
+
+/* === HOME === */
+.home-inner {
+  text-align: center;
+  align-items: center;
+}
+
+.home-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === SERVICES === */
+.services-layout {
+  display: flex;
+  gap: 2.5rem;
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.services-image {
+  flex: 0 0 45%;
+}
+
+.services-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.services-content {
+  flex: 1;
+}
+
+.service-tier {
+  margin-bottom: 2rem;
+}
+
+.service-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2a2a2a;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.service-desc {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.75;
+}
+
+/* === ABOUT === */
+.about-subtitle {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.about-layout {
+  display: flex;
+  gap: 2.5rem;
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.about-image {
+  flex: 0 0 40%;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* === CONTACT === */
+.contact-intro {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  max-width: 580px;
+}
+
+.contact-intro em {
+  font-style: italic;
+  color: #777;
+}
+
+.form-container {
+  flex: 1;
+  margin-bottom: 2rem;
+  min-height: 300px;
+}
+
+.form-container iframe {
+  border: none;
+  width: 100%;
+  min-height: 400px;
+}
+
+/* === THANK YOU === */
+.thankyou-inner {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.thankyou-text {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.75;
+  max-width: 520px;
+  margin: 1.5rem auto 2.5rem;
+}
+
+/* === Responsive (Mobile) === */
+@media (max-width: 768px) {
+  #wrapper {
+    padding: 0;
+    align-items: stretch;
+  }
+
+  #card {
+    max-width: 100%;
+    min-height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .section-inner {
+    padding: 2rem 1.5rem;
+  }
+
+  .services-layout,
+  .about-layout {
+    flex-direction: column;
+  }
+
+  .services-image,
+  .about-image {
+    flex: none;
+  }
+
+  .services-image img,
+  .about-image img {
+    max-height: 220px;
+  }
+
+  .portrait {
+    width: 120px;
+    height: 120px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 0.9rem;
+    letter-spacing: 0.25em;
+  }
+
+  .section-inner {
+    padding: 1.5rem 1.25rem;
+  }
+}
